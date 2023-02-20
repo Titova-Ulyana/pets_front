@@ -71,29 +71,46 @@
             <p class="w-50 text-primary" style="min-width: 300px;">Количество объявлений:</p>
             <p class="w-50" style="min-width: 300px;">4</p>
         </div>
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Изменить данные
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          
+            <form style="min-width: 300px;">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Введите адрес электронной почты</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div  class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
+                </div>
+            </form>
+
+            <form>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Введите номер телефона</label>
+                    <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp">
+                    <div class="form-text">Используйте цифры, +, -.</div>
+                </div>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary">Сохранить изменения</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-    <h2 class="text-center text-white bg-primary m-2">Изменить адрес электронной почты</h2>
-    <form class="w-50 m-auto p-3" style="min-width: 300px;">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Введите адрес электронной почты</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div  class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Отправить</button>
-    </form>
-
-    <h2 class="text-center text-white bg-primary m-2">Изменить номер телефона</h2>
-    <form class="w-50 m-auto p-3" style="min-width: 300px;">
-        <div class="mb-3">
-            <label for="phone" class="form-label">Введите номер телефона</label>
-            <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp">
-            <div class="form-text">Используйте цифры, +, -.</div>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Отправить</button>
-    </form>
 
     <h2 class="text-center text-white bg-primary m-2">Добавленные объявления</h2>
     <div class="d-flex flex-row flex-wrap">
